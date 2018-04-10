@@ -1,0 +1,155 @@
+body {
+    background: url("image.jpg") repeat;
+    overflow: hidden;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: content-box;
+}
+
+.outer {
+    display: table;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.middle {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.inner {
+    margin-left: auto;
+    margin-right: auto;
+    width: 500px;
+    height: 500px;
+    position: relative;
+}
+
+#circle {
+    display: block;
+    padding: 0;
+    width: 460px;
+    height: 460px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 20px solid black;
+    position: absolute;
+}
+
+.quarter {
+    display: inline-block;
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 220px;
+    height: 220px;
+}
+
+.q1 {
+    background-color: #0e8229;
+    border-right: 20px solid black;
+    border-bottom: 20px solid black;
+}
+
+.q2 {
+    background-color: #872323;
+    border-bottom: 20px solid black;
+}
+
+.q3 {
+    background-color: #9b9906;
+    border-right: 20px solid black;
+}
+
+.q4 {
+    background-color: #282c6b;
+}
+
+.insideCircle {
+    position: absolute;
+    background-color: floralwhite;
+    border-radius: 50%;
+    border: 10px solid black;
+    width: 200px;
+    height: 200px;
+    margin: 28%;
+    text-align: center;
+}
+
+h1 {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-size: 40px;
+    font-weight: 1000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+sup {
+    font-size: 16px;
+}
+
+#count {
+    margin-left: 5px;
+    width: 50px;
+    height: 35px;
+    background-color: black;
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 1000;
+    font-size: 20px;
+    border: 5px solid darkred;
+    border-radius: 10%;
+    display: inline-block;
+}
+
+.buttons {
+    margin-top: 10px;
+    font-size: 12px;
+    color: black;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    width: 30px;
+    height: 28px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+#restart:hover, #strict:hover, #start:hover {
+    border-color: black;
+}
+
+#restart {
+    border: 2px solid green;
+    width: 38px;
+    height: 42px;
+}
+
+#strict {
+    border: 2px solid red;
+}
+
+.selectStrict {
+    background-color: red;
+}
+
+#start {
+    border: 2px solid blue;
+}
+
+.disabled {
+    pointer-events: none;
+}
+
+.disabledButton {
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+
+
+
