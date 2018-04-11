@@ -56,7 +56,6 @@ $(document).ready(function () {
 function playGame() {
     randomNum = (Math.ceil(Math.random() * 4)).toString();
     array.push(randomNum);
-    console.log(array);
     $("#count").text(blinks);
     for (var i = 0; i < array.length; i++) {
         blinkLights(i);
